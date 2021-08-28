@@ -10,7 +10,7 @@ async function foo(owner) {
     projList.innerHTML = "";
     prevOwn = owner;
   }
-  let x = await fetch("//api.github.com/users/" + owner + "/repos");
+  let x = await fetch("https://api.github.com/users/" + owner + "/repos");
   let data = await x.json();
   let done = false;
   for (i of JSON.parse(JSON.stringify(data))) {
