@@ -20,7 +20,7 @@ async function foo(owner) {
       done = true;
     }
     if (i.fork) continue;
-    console.log(i.name);
+    //console.log(i.name);
     if (i.description == null) i.description = "";
     let str =
       '<project-prototype name="' +
